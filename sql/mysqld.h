@@ -62,6 +62,7 @@
 #include "mysql/status_var.h"
 #include "mysql_com.h"  // SERVER_VERSION_LENGTH
 
+// gry(TODO) 移动到上面的 my_thread.h 上面，跟 5.7 保持一致 然后注释风格保持一致
 // stonedb8
 #include "my_thread_local.h"               /* my_get_thread_local */
 

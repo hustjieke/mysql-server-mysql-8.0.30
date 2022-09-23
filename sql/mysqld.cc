@@ -12351,5 +12351,6 @@ bool check_and_update_partial_revokes_sysvar(THD *thd) {
   return false;
 }
 
+// gry(TODO) 移到上面定义的变量集, 参考 5.7
 // stonedb8
 ulong tianmu_group_concat_max_len = 1024;

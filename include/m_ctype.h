@@ -136,6 +136,7 @@ extern MY_UNI_CTYPE my_uni_ctype[256];
 #define MY_REPERTOIRE_UNICODE30 3 /* ASCII | EXTENDED:     U+0000..U+FFFF */
 
 /* Flags for strxfrm */
+// gry(TODO): 已经有定义了，为什么还要再定义? 如果去掉，对编译运行会有什么影响？
 #define MY_STRXFRM_PAD_TO_MAXLEN 0x00000080 /* if pad tail(for filesort) */
 
 typedef struct MY_UNI_IDX {

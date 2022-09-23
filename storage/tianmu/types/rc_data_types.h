@@ -455,6 +455,7 @@ class rc_hash_compare {
  * that can be used by std::memcmp \param src - source BString \param dst -
  * destination BString \param charset - character set to be used
  */
+// gry(TODO): 为什么要吧 MY_STRXFRM_PAD_WITH_SPACE 替换成 MAXLEN?
 static inline void ConvertToBinaryForm(const BString &src, BString &dst, DTCollation coll) {
   if (!src.IsNull()) {
     coll.collation->coll->strnxfrm(coll.collation, (uchar *)dst.val, dst.len, dst.len, (uchar *)(src.val), src.len,
